@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>my portfolio page</title>
+
+    <style>
+        *{
+            font-family: 'Open Sans', sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+        #navbar{
+            width: 100vw;
+            background: crimson;
+            position: fixed;
+            top: 0px;
+            display: flex;
+            justify-content:flex-end;
+        }
+        #navbar .link{
+            margin: 1rem 2rem;
+        }
+        #navbar .link a{
+            text-decoration: none;
+            color: white;
+            font-size: 1.7rem;
+            font-weight: 300;
+        }
+
+        #welcome-section{
+            width: 100vw;
+            height: 100vh;
+            background: #262629;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 2.5rem;
+        }
+        #welcome-section h1{
+            font-weight: 300;
+        }
+        #welcome-section p{
+            font-size:1.5rem;
+            font-weight: 400;
+            opacity: 0.4;
+        }
+
+        #projects{
+            width: 100vw;
+            background: #45567D;
+            text-align: center;
+            color: white;
+            padding-bottom: 5rem;
+        }
+        #projects-text{
+            max-width: 700px;
+            margin: auto;
+            padding-top: 10rem;
+        }
+        #projects p{
+            font-size:3rem;
+            font-weight: 300;
+        }
+        #project-container{
+            width: 80%;
+            margin: 5rem auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .project-tile{
+            width: 25%;
+            margin: 1rem;
+            border: 10px solid transparent;
+            transition: border 200ms;
+            box-sizing: border-box;
+        }
+        .project-tile:hover{
+            border: 10px solid gray;
+        }
+        .project-bottom{
+            height: 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #262629;
+        }
+        .project-tile img{
+            margin: auto;
+            width: 100%;
+            height: auto;
+        }
+        .project-tile a{
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            font-weight: 300;
+        }
+        #profile-link{
+            text-decoration: none;
+            padding:1rem;
+            color: white;
+            background: black;
+            transition: border 200ms;
+            border: 0px solid gray;
+        }
+        #profile-link:hover{
+            border: 10px solid gray;
+        }
+
+        #contact{
+            width: 100vw;
+            height: 100vh;
+            background: #262629;
+            color: white;
+            text-align: center;
+        }
+        #contact-text{
+            font-size: 4rem;
+            font-weight: 400;
+            padding:5rem 5vw;
+        }
+        #contact-buttons{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        
+        .contact-button{
+            color: white;
+            margin-top:2rem;
+            padding:1rem;
+            font-size: 2rem;
+            text-decoration: none;
+            transition: margin 200ms;
+        }
+        .contact-button:hover{
+            margin-top: 40px;
+        }
+
+        @media(max-width:850px){
+            .project-tile{
+            width: 45%;
+        }
+        }
+        @media(max-width: 600px){
+            .project-tile{
+                width: 70%;
+            }
+            p{
+                font-size: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="link"><a href="#welcome-section">Welcome</a></div>
+        <div class="link"><a href="#projects">Projects</a></div>
+        <div class="link"><a href="#contact">Contact</a></div>
+    </nav>
+
+    <section id="welcome-section">
+        <h1>My Name is Giorgio</h1>
+        <p><i>boy who first-name is unknown</i></p>
+    </section>
+
+    <section id="projects">
+        <div id="projects-text"><p>These are some of my projects</p><hr></div>
+
+        <div id="project-container">
+        <div class="project-tile">
+            <div class="project-top">
+                <img src="https://assets.codepen.io/260521/internal/screenshots/pens/zNqgVx.default.png?fit=cover&format=auto&ha=false&height=540&quality=75&v=2&version=1601011856&width=960" alt="tribute page photo">
+            </div>
+            <div class="project-bottom">
+                <a href="https://codepen.io/tayfun_fletcher/full/XWpgvbd" target="_blank">Tribute Page</a>
+            </div>
+        </div>
+
+        <div class="project-tile">
+            <div class="project-top">
+                <img src="https://assets.codepen.io/260521/internal/screenshots/pens/RKRbwL.default.png?fit=cover&format=auto&ha=false&height=540&quality=75&v=2&version=1601012121&width=960" alt="landing page photo">
+            </div>
+            <div class="project-bottom">
+                <a href="https://codepen.io/tayfun_fletcher/full/GRrMWWx" target="_blank">Landing Page</a>
+            </div>
+        </div>
+
+        <div class="project-tile">
+            <div class="project-top">
+                <img src="https://assets.codepen.io/260521/internal/screenshots/pens/NdrKKL.default.png?fit=cover&format=auto&ha=false&height=540&quality=75&v=2&version=1606485576&width=960" alt="technical documentation page">
+            </div>
+            <div class="project-bottom">
+                <a href="https://codepen.io/tayfun_fletcher/full/ExZbVap" target="_blank">Technical Documentation</a>
+            </div>
+        </div>
+
+        <div class="project-tile">
+            <div class="project-top">
+                <img src="https://assets.codepen.io/260521/internal/screenshots/pens/VPaoNP.default.png?fit=cover&format=auto&ha=false&height=540&quality=75&v=2&version=1601011977&width=960" alt="survey form photo">
+            </div>
+            <div class="project-bottom">
+                <a href="https://codepen.io/tayfun_fletcher/full/KKavmVN" target="_blank">Survey Form</a>
+            </div>
+        </div>
+    </div>
+    <a id="profile-link" href="https://codepen.io/your-work" target="_blank">Show all</a>
+    </section>
+
+    <section id="contact">
+        <div id="contact-text">
+            <span><i>Let's talk about gae's</i></span>
+        </div>
+
+        <div id="buttons-container">
+            <div id="contact-buttons">
+                <a class="contact-button" href="" target="_blank">Github</a>
+                <a class="contact-button" href="" target="_blank">Codepen</a>
+                <a class="contact-button" href="" target="_blank">Twitter</a>
+                <a class="contact-button" href="" target="_blank">Instagram</a>
+                <a class="contact-button" href="" target="_blank">Facebook</a>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
